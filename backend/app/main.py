@@ -32,6 +32,13 @@ def root():
     return {"status": "ok", "service": "AIVOA Customer Complaint Management API"}
 
 
+@app.get("/debug")
+def debug():
+    return {
+        "frontend_origin": settings.FRONTEND_ORIGIN
+    }
+
+
 @app.get("/health")
 def health():
     return {"status": "healthy"}
