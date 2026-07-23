@@ -1,0 +1,80 @@
+.ra-card {
+  background: var(--copilot-bg-alt);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--radius-lg);
+  padding: 16px 18px;
+  margin: 16px 16px 0;
+}
+
+.ra-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.ra-eyebrow {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--copilot-text-soft);
+  font-weight: 600;
+}
+
+.ra-badge {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  letter-spacing: 0.02em;
+}
+
+.sev-critical { background: var(--critical-bg); color: var(--critical); }
+.sev-major { background: var(--major-bg); color: var(--major); }
+.sev-minor { background: var(--minor-bg); color: var(--minor); }
+.sev-neutral { background: rgba(255,255,255,0.08); color: var(--copilot-text-soft); }
+
+.ra-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ra-row {
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.ra-row-label {
+  flex: 0 0 108px;
+  color: var(--copilot-text-soft);
+  font-weight: 500;
+}
+
+.ra-row-value {
+  color: var(--copilot-text);
+  font-weight: 500;
+}
+
+.ra-reasoning {
+  margin: 6px 0 0;
+  font-size: 12.5px;
+  font-style: italic;
+  color: var(--copilot-text-soft);
+  border-left: 2px solid var(--copilot-accent);
+  padding-left: 10px;
+  line-height: 1.5;
+}
+
+.ra-empty {
+  font-size: 12.5px;
+  color: var(--copilot-text-soft);
+  line-height: 1.5;
+  margin: 0;
+}

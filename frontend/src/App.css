@@ -1,0 +1,86 @@
+.app-shell {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  height: 56px;
+  flex-shrink: 0;
+  background: var(--ink);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.app-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.app-brand-mark {
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: var(--copilot-accent);
+}
+
+.app-brand-divider {
+  color: rgba(255,255,255,0.25);
+}
+
+.app-brand-name {
+  font-weight: 500;
+  color: rgba(255,255,255,0.85);
+}
+
+.app-new-btn {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.18);
+  color: #fff;
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 7px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.app-new-btn:hover:not(:disabled) {
+  background: rgba(255,255,255,0.16);
+}
+
+.app-new-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.app-body {
+  flex: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  min-height: 0;
+}
+
+.app-pane {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.app-pane-form {
+  border-right: 1px solid var(--line);
+}
+
+@media (max-width: 860px) {
+  .app-body {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    overflow-y: auto;
+  }
+  .app-pane-form, .app-pane-chat {
+    height: auto;
+    min-height: 480px;
+  }
+}
