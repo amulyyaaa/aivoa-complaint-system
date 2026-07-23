@@ -23,7 +23,7 @@ class Settings:
     GROQ_FALLBACK_MODEL: str = os.getenv("GROQ_FALLBACK_MODEL", "llama-3.3-70b-versatile")
 
     # --- CORS ---
-    FRONTEND_ORIGIN: str = os.getenv("FRONTEND_ORIGIN", "http://localhost:3000")
+    FRONTEND_ORIGIN: str = os.getenv("FRONTEND_ORIGIN", "")
 
     # --- Uploads ---
     UPLOAD_DIR: str = os.getenv("UPLOAD_DIR", "./uploads")
